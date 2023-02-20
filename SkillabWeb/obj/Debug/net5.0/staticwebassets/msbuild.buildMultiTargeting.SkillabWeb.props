@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SkillabWeb.props" />
+</Project>
