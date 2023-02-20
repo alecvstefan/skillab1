@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/SkillabApi/.vs/SkillabApi/v16
+/SkillabApi/SkillabApi/bin/Debug/net5.0
+/SkillabApi/SkillabApi/obj
+/SkillabWeb/.vs/SkillabWeb
+/SkillabWeb/SkillabWeb/bin/Debug/net5.0
+/SkillabWeb/SkillabWeb/obj
+/SkillabApi/.vs/SkillabApi/DesignTimeBuild/.dtbcache.v2
+/.vs
