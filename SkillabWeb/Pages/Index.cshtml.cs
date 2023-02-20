@@ -39,7 +39,7 @@ namespace SkillabWeb.Pages
 
             //var requestUriString = "https://10.4.0.117:32774/Employee/GetAll";
 
-            var requestUriString = "https://localhost:32778/Employee/GetEmployees";
+            var requestUriString = "https://host.docker.internal:8080/Employee/GetEmployees";
 
             var requestUri = new Uri(requestUriString);
 
