@@ -147,11 +147,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\VSRepos\\SkillabWeb\\SkillabWeb.csproj",
+      "projectUniqueName": "E:\\Skillab1\\skillab1\\SkillabWeb\\SkillabWeb.csproj",
       "projectName": "SkillabWeb",
-      "projectPath": "E:\\VSRepos\\SkillabWeb\\SkillabWeb.csproj",
+      "projectPath": "E:\\Skillab1\\skillab1\\SkillabWeb\\SkillabWeb.csproj",
       "packagesPath": "C:\\Users\\Alec\\.nuget\\packages\\",
-      "outputPath": "E:\\VSRepos\\SkillabWeb\\obj\\",
+      "outputPath": "E:\\Skillab1\\skillab1\\SkillabWeb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alec\\AppData\\Roaming\\NuGet\\NuGet.Config",

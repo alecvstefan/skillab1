@@ -24,6 +24,9 @@ namespace SkillabWeb.Pages
 
         public List<Employee> Employees { get; set; }
 
+        public string Error { get; set; }
+        public string InnerError { get; set; }
+
         public async Task OnGetAsync()
         {
             var handler = new HttpClientHandler();
@@ -39,7 +42,7 @@ namespace SkillabWeb.Pages
 
             //var requestUriString = "https://10.4.0.117:32774/Employee/GetAll";
 
-            var requestUriString = "https://host.docker.internal:8080/Employee/GetEmployees";
+            var requestUriString = "http://host.docker.internal:8080/Employee/GetEmployees";
 
             var requestUri = new Uri(requestUriString);
 
@@ -51,8 +54,9 @@ namespace SkillabWeb.Pages
                 Employees = JsonConvert.DeserializeObject<List<Employee>>(employees);
             }
             catch (Exception ex)
-            { 
-
+            {
+                Error = ex.Message;
+                InnerError = ex.InnerException.Message;
             }
         }
     }

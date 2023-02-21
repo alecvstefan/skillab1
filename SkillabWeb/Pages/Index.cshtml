@@ -32,9 +32,16 @@
                             @Html.DisplayFor(modelItem => item.favouritepicturelink)
                         </td>                    
                     </tr>
-                }
+                }               
+                
+                
             </tbody>
-    </table>
+        </table>
+    }
+    else if (!String.IsNullOrEmpty(Model.Error))
+    {
+        <input type="text" id="Error" name="Error" value="@Model.Error" />
+        <input type="text" id="InnerError" name="InnerError" value="@Model.InnerError" />
     }
 
 

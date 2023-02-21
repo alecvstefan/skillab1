@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M4xTfWxeV3fU86ow4JhgURFfyW2gdMSXNbB5ytOIaJM9L+B4aJ33RU1fZ0Lr/tlhzVFPD/I1ncq3ruZ1052MAw==",
+  "dgSpecHash": "+yZzlQ+WMdys3SNWI6ISyHpmtRaj+6GFCbcSDMQe8ZDANOT3pAFYZkKbEIWtNnF1TrVm6VI0edGCM/2nA3HRIg==",
   "success": true,
-  "projectFilePath": "E:\\VSRepos\\SkillabWeb\\SkillabWeb.csproj",
+  "projectFilePath": "E:\\Skillab1\\skillab1\\SkillabWeb\\SkillabWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alec\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\Alec\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
