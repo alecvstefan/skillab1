@@ -39,21 +39,15 @@ namespace SkillabWeb.Pages
 
             //var requestUriString = "https://10.4.0.117:32774/Employee/GetAll";
 
-            var requestUriString = "https://localhost:32778/Employee/GetEmployees";
+            var requestUriString = "http://api/Employee/GetEmployees";
 
             var requestUri = new Uri(requestUriString);
 
-            try
-            {
-               var response = await httpClient.GetAsync(requestUri);
-               var employees = await response.Content.ReadAsStringAsync();
+            var response = await httpClient.GetAsync(requestUri);
+            var employees = await response.Content.ReadAsStringAsync();
 
-                Employees = JsonConvert.DeserializeObject<List<Employee>>(employees);
-            }
-            catch (Exception ex)
-            { 
-
-            }
+            Employees = JsonConvert.DeserializeObject<List<Employee>>(employees);
+            
         }
     }
 }
