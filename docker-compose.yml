@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  api :
+    build: ./SkillabApi    
+    ports:
+      - "8000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - db
+  web :
+    build: ./SkillabWeb
+    ports:
+      - "8081:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - api
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    volumes: 
+       - ./db.sql:/docker-entrypoint-initdb.d/
+volumes:
+  db:
+    driver: local
+    
